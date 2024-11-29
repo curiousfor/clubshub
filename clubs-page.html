@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Clubs</title>
+    <link rel="stylesheet" href="club-page.css">
+</head>
+<body>
+    <header>
+        <h1><b>EXPLORE SHOOLINI UNIVERSITY CLUBS</b></h1>
+        <nav class="home-back">
+            <a href="Home-page.html" class="home-button">Home</a>
+        </nav>
+        <p><space>Find the club that matches your interests!</space></p>
+        <div id="search-container">
+            <input class="search-bar" type="text" id="search-bar" placeholder="Search clubs...">
+            <button class="search-button" id="search-button">Search</button>
+        </div>
+    </header>
+    
+    
+    <div id="club-tabs">
+        <button class="tab-button active" onclick="filterClubsByType('all')">All</button>
+        <button class="tab-button" onclick="filterClubsByType('sports')">Sports</button>
+        <button class="tab-button" onclick="filterClubsByType('arts')">Arts</button>
+        <button class="tab-button" onclick="filterClubsByType('tech')">Tech</button>
+        <button class="tab-button" onclick="filterClubsByType('community')">Community</button>
+    </div>
+
+    <section id="clubs-list" class="club-container">
+       
+    </section>
+
+    
+    <script type="module" src="scripts.js"></script>
+
+</body>
+</html>

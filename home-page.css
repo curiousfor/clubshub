@@ -1,0 +1,334 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #fffefe;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header Section */
+.header {
+  background-image: linear-gradient(rgba(30, 6, 4, 0.7), rgba(54, 24, 24, 0.7)), url(other-images/shoolini\ campus.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Navbar */
+nav {
+  position: absolute;
+  top: 20px;
+  left: 6%;
+  width: 88%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+nav img {
+  width: 100px;
+  transition: transform 0.3s ease-in-out;
+}
+
+nav img:hover {
+  transform: scale(1.1);
+}
+
+/* Navigation Links */
+.nav-links {
+  text-align: right;
+}
+
+.nav-links ul {
+  list-style: none;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links ul li a:hover {
+  color: #f44336;
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+/* Text Box */
+.text-box {
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-box h1 {
+  font-size: 62px;
+  margin-bottom: 10px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.text-box p {
+  font-size: 30px;
+  margin-bottom: 40px;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+  
+
+.hero-btn {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 20px 50px;
+  font-size: 22px;
+  transition: background 1s, transform 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+  border-color: #f44336;
+  background: #f44336;
+  transform: scale(1.05);
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.6s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  font-size: 14px;
+}
+
+
+  
+/* About Us Section */
+.about-us {
+  text-align: center;
+  position: relative;
+}
+
+.about-us h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.about-us h2:hover {
+  color: #f44336;
+}
+
+.about-us:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Light gray background for overlay */
+  z-index: -1;
+  transform: translateY(-10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-us:hover:before {
+  transform: translateY(0);
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.about-us ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-us ul li {
+  margin-bottom: 10px;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  background-color: #f44336;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  margin-top: 40px; /* Add this line to create space above the button */
+}
+
+.learn-more-btn:hover {
+  background-color: #f00;
+  transform: scale(1.05);
+}
+
+/* Main Content (including About Us) */
+.main-content {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* Who We Are Section */
+.who-we-are {
+  padding: 50px 0;
+  text-align: center;
+  position: relative;
+}
+
+.who-we-are h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.who-we-are h2:hover {
+  color: #f44336;
+}
+
+.who-we-are:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: -1;
+  transform: translateY(-10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.who-we-are:hover:before {
+  transform: translateY(0);
+}
+
+.who-we-are p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.member-types {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.member-type {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-type:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.member-type h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.member-type h3:hover {
+  color: #f44336;
+}
+
+.member-type p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .member-types {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member-type {
+    margin-bottom: 20px;
+    width: 80%; /* Adjust width for smaller screens */
+  }
+
+  .about-us h2, .who-we-are h2 {
+    font-size: 36px; /* Adjust heading size for smaller screens */
+  }
+} 
+
